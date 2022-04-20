@@ -8,7 +8,7 @@ let sum = 0;
 // Chiedo all'utente un numero per 5 volte...
 for (let i = 0; i < 5; i++) {
     // ...e aggiungo quel numero alla variabile sum.
-    sum += parseInt(prompt("Dimmi un numero"));
+    sum += parseInt(prompt(`Inserisci un numero e premi invio (${i + 1}/5)`));
 }
 
 // Stampo il risultato in console
