@@ -9,9 +9,12 @@ let result = [];
 // Creo un contatore per il ciclo while
 let counter = 1;
 
+// Creo il ciclo while che fa un'operazione un numero di volte pari al numero inserito dall'utente.
 while (counter <= userNumber) {
+    // Pusho il risultato dentro l'array vuoto.
     result.push(counter * counter * counter);
     counter++;
 }
 
+// Stampo il risultato
 console.log(result);
