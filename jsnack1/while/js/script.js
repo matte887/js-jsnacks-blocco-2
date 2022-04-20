@@ -10,10 +10,16 @@ let counter = 0;
 
 // Chiedo all'utente un numero per 5 volte...
 while (counter < 5) {
-    // ...e aggiungo quel numero alla variabile sum.
-    sum += parseInt(prompt("Dimmi un numero"));
-    // Aumento il counter per mandare avanti il ciclo
-    counter++
+    const userNumber = parseInt(prompt(`Inserisci un numero e premi invio (${counter+1}/5)`));
+    // Controllo che l'utente abbia inserito un numero
+    if (isNaN (userNumber)) {
+        console.log("Devi inserire un numero");
+    } else {
+        // ...e aggiungo quel numero alla variabile sum.
+        sum += userNumber;
+        // Aumento il counter per mandare avanti il ciclo
+        counter++
+    }
 } 
 
 // Stampo il risultato in console
