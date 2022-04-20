@@ -11,16 +11,10 @@ do {
 // Creo un array che conterrà tutti i risultati.
 let result = [];
 
-// Creo un contatore per il ciclo while.
-let counter = 1;
-
 // Creo il ciclo while che fa l'operazione del cubo un numero di volte pari al numero inserito dall'utente...
-while (counter <= userNumber) {
+for (let i = 1; i <= userNumber; i++) {
     // ...e pusho il risultato dentro l'array vuoto.
-    result.push(`Il cubo di ${counter} è ${counter * counter * counter}`);
-    // Faccio avanzare il ciclo
-    counter++;
+    result.push(`Il cubo di ${i} è ${i * i * i}`);
 }
 
-// Stampo il risultato
 console.log(result);
