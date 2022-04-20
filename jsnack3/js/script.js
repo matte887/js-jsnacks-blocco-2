@@ -1,7 +1,5 @@
 // Stampa il cubo dei primi N numeri, dove N è un numero indicato dall'utente.
 
-// Chiedo all'utente un numero e lo trasformo subito da stringa a numero.
-
 // Creo una variabile per il numero che l'utente inserirà
 let userNumber;
 
@@ -13,7 +11,7 @@ do {
 // Creo un array che conterrà tutti i risultati.
 let result = [];
 
-// Creo un contatore per il ciclo while
+// Creo un contatore per il ciclo while.
 let counter = 1;
 
 // Creo il ciclo while che fa l'operazione del cubo un numero di volte pari al numero inserito dall'utente...
