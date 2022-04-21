@@ -6,7 +6,7 @@ let userNumber;
 // Creo un ciclo che chiederà un numero all'utente finché questi non inserirà un numero (e non una stringa).
 do {
     userNumber = parseInt(prompt("Dimmi un numero."));
-} while (isNaN(userNumber));
+} while (isNaN(userNumber) || userNumber < 1);
 
 // Creo un array che conterrà tutti i risultati.
 let result = [];
